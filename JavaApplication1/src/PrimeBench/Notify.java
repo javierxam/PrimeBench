@@ -36,8 +36,12 @@ public class Notify {
       notifyListeners();
     }
   }
-  public abstract void doRun();
-}
+
+        /**
+         *
+         */
+        public abstract void doRun();
+    }
     
     
 }

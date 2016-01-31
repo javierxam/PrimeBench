@@ -13,13 +13,14 @@ package PrimeBench;
 
  
 
-public abstract class Bench implements Runnable{
+public abstract class Bench implements Runnable, ThreadComplete{
     public void start(){
           
         Thread bench = new Thread (this);
         bench.start();
    }
 
+    
     @Override
     public void run(){
      long i=0;
@@ -32,13 +33,17 @@ public abstract class Bench implements Runnable{
         }
         long runTime= System.currentTimeMillis() - startTime;
         System.out.println(" Bench time: " + runTime);
-        Punts.flag+=1;
-        Punts.mark+=runTime;
+        
+
 
 
 }
                
       public abstract void doRun();
+
+    void addListener(Prime aThis) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
             
           
  

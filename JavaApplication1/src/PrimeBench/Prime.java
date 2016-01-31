@@ -10,20 +10,43 @@ package PrimeBench;
  * @author xavi
  */
 
-public class Prime {
+
+public class Prime implements Runnable{
+
+    public Prime() {
+        
+        
+        Bench bench = new Bench().addListener(this).start();
+    }
     
    
-   public void start(){
+  
       
-        Bench b = new Bench () {
-            @Override
-            public void doRun() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
-        };
-        b.start();
-   }
+         
+             
+              void doRun() {
+                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+             }
 
-   
-            
+             
+              void notifyOfThreadComplete(Thread thread) {
+                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+             }
+         
+
+    
+        
+    
+         
+
+    @Override
+    public void run() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+           
+          
+           
+         
+         
+        
 }
