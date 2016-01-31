@@ -16,7 +16,7 @@ public class Prime implements Runnable{
     public Prime() {
         
         
-        Bench bench = new Bench().addListener(this).start();
+        Bench bench = new Bench().addListener(this).start();// Error, it tells me i cant instantiate an abstrac clss
     }
     
    
