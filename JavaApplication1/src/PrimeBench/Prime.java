@@ -16,8 +16,12 @@ public class Prime implements Runnable{
     public Prime() {
         
         
-        Bench bench = new Bench().addListener(this).start();// Error, it tells me i cant instantiate an abstrac clss
-    }
+        Bench bench = new Bench().addListener(this).start();
+
+/* Error, it tells me i cant instantiate an abstrac clss
+        I need to know about abstract class, concrete class, interfaces and 
+        how to instantiate an abstract class
+    */}
     
    
   
